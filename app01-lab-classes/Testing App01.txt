@@ -1,0 +1,47 @@
+LabClass co452Lab = new LabClass(3);
+co452Lab.numberOfStudents()
+    returned int 0
+co452Lab.printList();
+Lab class unknown
+Instructor: unknown   Room: unknown
+Class list:
+Number of students: 0
+co452Lab.numberOfStudents()
+    returned int 0
+Student Monica = new Student("Monica", "04829471");
+Student Joshua = new Student("Joshua", "84730492");
+Student Peter = new Student("Peter", "58492736");
+co452Lab.setInstructor("Nicholas Day");
+co452Lab.setRoom("G100");
+co452Lab.setTime("Tuesday 29th September 2020");
+Monica.getCredits()
+    returned int 0
+Monica.addCredits(20);
+Joshua.addCredits(20);
+Peter.addCredits(20);
+Monica.getName()
+    returned String "Monica"
+Monica.changeName("Monic");
+Monica.changeName("Monica");
+co452Lab.printList();
+Lab class Tuesday 29th September 2020
+Instructor: Nicholas Day   Room: G100
+Class list:
+Number of students: 0
+co452Lab.numberOfStudents()
+    returned int 0
+co452Lab.numberOfStudents()
+    returned int 0
+co452Lab.numberOfStudents()
+    returned int 0
+co452Lab.enrollStudent(Monica);
+co452Lab.enrollStudent(Joshua);
+co452Lab.enrollStudent(Peter);
+co452Lab.printList();
+Lab class Tuesday 29th September 2020
+Instructor: Nicholas Day   Room: G100
+Class list:
+Monica, student ID: 04829471, credits: 20
+Joshua, student ID: 84730492, credits: 20
+Peter, student ID: 58492736, credits: 20
+Number of students: 3
