@@ -29,6 +29,14 @@ public class Student
     }
 
     /**
+     * Method that allows a course to be added to the student via enrolling.
+     *
+     */
+    public void enrolOnCourse(Course course)
+    {
+        this.course = course;
+    }
+    /**
      * Return the full name of this student.
      */
     public String getName()

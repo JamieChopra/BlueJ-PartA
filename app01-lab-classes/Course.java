@@ -13,9 +13,10 @@ public class Course
     /**
      * Constructor for objects of class Course
      */
-    public Course()
+    public Course(String title, String codeNumber)
     {
-       
+       this.title = title;
+       this.codeNumber = codeNumber;
     }
 
 }
