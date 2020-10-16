@@ -19,4 +19,8 @@ public class Course
        this.codeNumber = codeNumber;
     }
 
+    public void print()
+    
+    { System.out.println("Course:" + title + "" + codeNumber);
+    }
 }

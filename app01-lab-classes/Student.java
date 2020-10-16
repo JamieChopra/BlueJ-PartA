@@ -68,10 +68,6 @@ public class Student
         credits += additionalPoints;
     }
 
-    public void enrolOnCourse(Course course)
-{
-    this.course = course;
-}
     /**
      * Return the number of credit points this student has accumulated.
      */
@@ -95,6 +91,9 @@ public class Student
      */
     public void print()
     {
+     
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
+        course.print();
     }
+    
 }
