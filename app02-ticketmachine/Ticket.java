@@ -35,8 +35,8 @@ public class Ticket
      */
     public void print()
     {
-        System.out.println(destination);
-        System.out.println(price);
-        System.out.println(dateTime);
+        System.out.println("Ticket to" + destination);
+        System.out.println("Cost of ticket " + price + "p ");
+        System.out.println("Issued at " + dateTime);
     }
 }
