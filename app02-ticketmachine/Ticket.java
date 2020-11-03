@@ -21,11 +21,22 @@ public class Ticket
     
     /**
      * Constructor for objects of class Ticket
+     * 
      */
     public Ticket(String destination, int price)
     {
-        
+        dateTime = new Date();
+        this.destination = destination;
+        this.price = price;
     }
 
-   
+    /**
+     * Constructor for printing the destination, date and price.
+     */
+    public void print()
+    {
+        System.out.println(destination);
+        System.out.println(price);
+        System.out.println(dateTime);
+    }
 }
