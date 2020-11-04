@@ -29,13 +29,24 @@ public class Ticket
         this.destination = destination;
         this.price = price;
     }
-
+    
+    /**
+     * String to return the destination of the tickets.
+     * 
+     */
+    public String getDestination()
+    {
+        return destination;
+    
+    }
+    
+  
     /**
      * Constructor for printing the destination, date and price.
      */
     public void print()
     {
-        System.out.println("Ticket to" + destination);
+        System.out.println("Ticket to " + destination);
         System.out.println("Cost of ticket " + price + "p ");
         System.out.println("Issued at " + dateTime);
     }
