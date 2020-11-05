@@ -33,7 +33,12 @@ public class TicketMachine
         total = 0;
     }
     
-    private void createTicket
+    private void createTickets()
+    {
+        aylesburyTicket = new Ticket ("Aylesbury", 220);
+        amershamTicket = new Ticket ("Amersham", 300);
+        highWycombeTicket = new Ticket ("HighWycombe",330);
+    }
     
     public void returnTicket()
     {

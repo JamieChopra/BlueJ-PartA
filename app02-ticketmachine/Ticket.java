@@ -23,7 +23,7 @@ public class Ticket
      * Constructor for objects of class Ticket
      * 
      */
-    public Ticket aylesburyTicket()
+    public Ticket()
     {
         price = 220;
         destination = "Aylesbury";
