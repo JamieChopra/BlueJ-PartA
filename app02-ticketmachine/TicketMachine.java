@@ -25,12 +25,12 @@ public class TicketMachine
     private Ticket highWycombeTicket;
     /**
      * Create a machine that issues tickets of the given price.
-     */
-    public TicketMachine(int price)
+      */
+    public TicketMachine()
     {
-        this.price = price;    
         balance = 0;
         total = 0;
+        createTickets();
     }
     
     private void createTickets()
