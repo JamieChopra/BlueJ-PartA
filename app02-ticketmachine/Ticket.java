@@ -3,8 +3,8 @@ import java.util.Date;
 /**
  * Write a description of class Ticket here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Jamie Chopra
+ * 0.1
  */
 public class Ticket
 {
@@ -17,16 +17,26 @@ public class Ticket
     private int price;
     
     //This is the date of the ticket purchase.
-    private Date dateTime;
+    private Date dateTime = new Date();
     
     /**
      * Constructor for objects of class Ticket
      * 
      */
+    public Ticket aylesburyTicket()
+    {
+        price = 220;
+        destination = "Aylesbury";
+    }
+    
     public Ticket(String destination, int price)
     {
-        dateTime = new Date();
+        this.price = price;
         this.destination = destination;
+    }
+    
+    public void getPrice()
+    {
         this.price = price;
     }
     
@@ -37,7 +47,6 @@ public class Ticket
     public String getDestination()
     {
         return destination;
-    
     }
     
   

@@ -22,19 +22,26 @@ public class TicketMachine
     
     private Ticket aylesburyTicket;
     private Ticket amershamTicket;
+    private Ticket highWycombeTicket;
     /**
      * Create a machine that issues tickets of the given price.
      */
-    public TicketMachine()
+    public TicketMachine(int price)
     {
-        this.price = price;
+        this.price = price;    
         balance = 0;
         total = 0;
-        
-        aylesburyTicket = new Ticket("Aylesbury", 220);
-        amershamTicket = new Ticket("Amersham", 300);
     }
-
+    
+    private void createTicket
+    
+    public void returnTicket()
+    {
+        System.out.println(aylesburyTicket);
+        System.out.println(amershamTicket);
+        System.out.println(highWycombeTicket);
+    }
+    
     /**
      * @Return The price of a ticket.
      */
