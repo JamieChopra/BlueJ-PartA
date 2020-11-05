@@ -1,0 +1,45 @@
+##################
+# The BlueJ Line
+##################
+
+Ticket to Aylesbury
+Cost of ticket 220p 
+Issued at Thu Nov 05 13:52:20 GMT 2020
+
+Ticket to Amersham
+Cost of ticket 300p 
+Issued at Thu Nov 05 13:52:20 GMT 2020
+
+Ticket to HighWycombe
+Cost of ticket 330p 
+Issued at Thu Nov 05 13:52:20 GMT 2020
+
+You Have Inserted: 10p
+Current Balance= 10p
+You Have Inserted: 20p
+Current Balance= 30p
+You Have Inserted: 100p
+Current Balance= 130p
+You Have Inserted: 200p
+Current Balance= 330p
+
+You have purchased a ticket to Amersham
+Remaining balance = 30 pence
+
+You do not have sufficient funds to purchase a ticket to Aylesbury
+You require = 190 pence more in order to purchase this ticket to Aylesbury
+You Have Inserted: 200p
+Current Balance= 230p
+
+You have purchased a ticket to Aylesbury
+Remaining balance = 10 pence
+You Have Inserted: 200p
+Current Balance= 210p
+You Have Inserted: 200p
+Current Balance= 410p
+
+You have purchased a ticket to High Wycombe
+Remaining balance = 80 pence
+Your balance has been refunded.
+
+Remaining balance= 0
