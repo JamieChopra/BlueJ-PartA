@@ -40,11 +40,11 @@ public class TicketMachine
         highWycombeTicket = new Ticket ("HighWycombe",330);
     }
     
-    public void returnTicket()
+    public void printAllTickets()
     {
-        System.out.println(aylesburyTicket);
-        System.out.println(amershamTicket);
-        System.out.println(highWycombeTicket);
+       aylesburyTicket.print();
+       amershamTicket.print();
+       highWycombeTicket.print();
     }
     
     /**
@@ -142,4 +142,5 @@ public class TicketMachine
         balance = 0;
         return amountToRefund;
     }
+ 
 }
