@@ -40,6 +40,14 @@ public class TicketMachine
         highWycombeTicket = new Ticket ("HighWycombe",330);
     }
     
+    private void printHeading()
+    {
+        System.out.println("##################");
+        System.out.println("# The BlueJ Line");
+        System.out.println("##################");
+    }
+    
+   
     public void printAllTickets()
     {
        printHeading();
@@ -49,7 +57,10 @@ public class TicketMachine
        amershamTicket.print();
        System.out.println();
        highWycombeTicket.print();
+       System.out.println();
     }
+  
+    
     
     /**
      * @Return The price of a ticket.
@@ -85,31 +96,82 @@ public class TicketMachine
         }
     }
     
+    public void buyAylesburyTicket()
+    {
+       if (balance >= 220)
+       {   System.out.println();
+           balance = balance - 220;
+           System.out.println("You have purchased a ticket to Aylesbury");
+           System.out.println("Remaining balance = " + (balance) + " pence" );
+       }
+       else
+       {    
+           System.out.println();
+           System.out.println("You do not have sufficient funds to purchase a ticket to Aylesbury");
+           System.out.println("You require = " + (220 - balance) + " pence more in order to purchase this ticket to Aylesbury");
+       }
+    }
+    
+    public void buyAmershamTicket()
+    {
+       if (balance >= 300)
+       {   System.out.println();
+           balance = balance - 300;
+           System.out.println("You have purchased a ticket to Amersham");
+           System.out.println("Remaining balance = " + (balance) + " pence" );
+       }
+       else
+       {    
+           System.out.println();
+           System.out.println("You do not have sufficient funds to purchase a ticket to Amersham");
+           System.out.println("You require = " + (300 - balance) + " pence more in order to purchase this ticket to Amersham");
+       }
+    }
+    
+    public void buyHighWycombeTicket()
+    {
+       if (balance >= 330)
+       {   System.out.println();
+           balance = balance - 330;
+           System.out.println("You have purchased a ticket to High Wycombe");
+           System.out.println("Remaining balance = " + (balance) + " pence" );
+       }
+       else
+       {    
+           System.out.println();
+           System.out.println("You do not have sufficient funds to purchase a ticket to High Wycombe");
+           System.out.println("You require = " + (330 - balance) + " pence more in order to purchase this ticket to High Wycombe");
+       }
+    }
+    
     public void insert20p()
     {
         balance = balance + 20;
+        printBalance(20);
     }
     
     public void insert10p()
     {
         balance = balance + 10;
+        printBalance(10);
     }
     
     public void insert100p()
     {
         balance = balance + 100;
+        printBalance(100);
     }
     
     public void insert200p()
     {
         balance = balance + 200;
+        printBalance(200);
     }
     
-    public void printHeading()
+    public void printBalance(int amount)
     {
-        System.out.println("##################");
-        System.out.println("# The BlueJ Line");
-        System.out.println("##################");
+        System.out.println("You Have Inserted: " + amount + "p");
+        System.out.println("Current Balance= " + balance + "p");
     }
     
     /**
@@ -148,10 +210,14 @@ public class TicketMachine
      */
     public int refundBalance()
     {
+        System.out.println("Your balance has been refunded.");
+        System.out.println();
         int amountToRefund;
         amountToRefund = balance;
         balance = 0;
+        System.out.println("Remaining balance= " + balance);
         return amountToRefund;
+        
     }
  
 }
