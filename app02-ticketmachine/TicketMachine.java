@@ -32,7 +32,9 @@ public class TicketMachine
         total = 0;
         createTickets();
     }
-    
+    /**
+     * Method that stores the three tickets
+     */
     private void createTickets()
     {
         aylesburyTicket = new Ticket ("Aylesbury", 220);
@@ -40,6 +42,10 @@ public class TicketMachine
         highWycombeTicket = new Ticket ("HighWycombe",330);
     }
     
+    /**
+     * Heading for clear presentation in the terminal when printing available tickets.
+     *
+     */
     private void printHeading()
     {
         System.out.println("##################");
@@ -47,7 +53,9 @@ public class TicketMachine
         System.out.println("##################");
     }
     
-   
+    /**
+     * Prints all tickets available.
+     */
     public void printAllTickets()
     {
        printHeading();
@@ -96,6 +104,14 @@ public class TicketMachine
         }
     }
     
+    /**
+     * Method for the purchase of the Aylesbury ticket in which buys the ticket if the balance is
+     * above or equal to the price of the ticket and prints the remaining balance. 
+     * 
+     * If the balance is below the price of the ticket a message is given stating that there are 
+     * not sufficient funds for the purchase of the ticket and the required amount to insert in
+     * order to purchase the ticket is presented.
+     */
     public void buyAylesburyTicket()
     {
        if (balance >= 220)
@@ -112,6 +128,9 @@ public class TicketMachine
        }
     }
     
+    /**
+     * Method for the purchase of the Amersham ticket.
+     */
     public void buyAmershamTicket()
     {
        if (balance >= 300)
@@ -128,6 +147,9 @@ public class TicketMachine
        }
     }
     
+    /**
+     * Method for the purchase of the HighWycombe ticket.
+     */
     public void buyHighWycombeTicket()
     {
        if (balance >= 330)
@@ -144,6 +166,10 @@ public class TicketMachine
        }
     }
     
+    /**
+     * Inserting money into ticket machine
+     */
+  
     public void insert20p()
     {
         balance = balance + 20;
@@ -168,6 +194,9 @@ public class TicketMachine
         printBalance(200);
     }
     
+    /**
+     * 
+     */
     public void printBalance(int amount)
     {
         System.out.println("You Have Inserted: " + amount + "p");

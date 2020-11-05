@@ -1,7 +1,7 @@
 import java.util.Date;
 
 /**
- * Write a description of class Ticket here.
+ * Class Ticket that creates the structure for a ticket including the price, destination and date.
  *
  * Jamie Chopra
  * 0.1
