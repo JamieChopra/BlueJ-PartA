@@ -42,8 +42,12 @@ public class TicketMachine
     
     public void printAllTickets()
     {
+       printHeading();
+       System.out.println();
        aylesburyTicket.print();
+       System.out.println();
        amershamTicket.print();
+       System.out.println();
        highWycombeTicket.print();
     }
     
@@ -99,6 +103,13 @@ public class TicketMachine
     public void insert200p()
     {
         balance = balance + 200;
+    }
+    
+    public void printHeading()
+    {
+        System.out.println("##################");
+        System.out.println("# The BlueJ Line");
+        System.out.println("##################");
     }
     
     /**
