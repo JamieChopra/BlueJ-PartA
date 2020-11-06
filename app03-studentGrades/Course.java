@@ -55,13 +55,33 @@ public class Course
     
     public void calculateFinalMark()
     {
+        if(courseCompleted())
+        {
         int totalMark = module1.getMark() + module2.getMark() + 
             module3.getMark() + module4.getMark();
             
         finalMark = totalMark / 4;
         
-       System.out.println("Final Mark= " + finalMark);
+        print();
     }
+    else
+    {
+    
+    }
+    }
+    
+    public boolean courseCompleted()
+    {
+        if((module1.isCompleted()) && (module2.isCompleted()))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
     
     public void setMark(int mark, String codeNo)
     {
@@ -79,15 +99,27 @@ public class Course
     { //createCourse();
       System.out.println("Course: " + title);
       System.out.println("Code Number: " + codeNumber);
-      System.out.println("Modules enrolled on: ");
-      
-      module1.print();
-      module2.print();
-      module3.print();
-      module4.print();
 }
     
+    public void printModules()
+    {
+        if(courseCompleted())
+        {
+            System.out.println("Modules enrolled on: ");
+            System.out.println();
+            module1.print();
+            System.out.println();
+            module2.print();
+            System.out.println();
+            module3.print();
+            System.out.println();
+            module4.print();
+            System.out.println();
+            System.out.println("Final Mark= " + finalMark);
+        
+        }
     
+    }
     
     public Grades convertToGrade(int mark)
     {

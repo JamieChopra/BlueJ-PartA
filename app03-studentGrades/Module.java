@@ -23,7 +23,7 @@ public class Module
      */
     public Module(String moduleTitle, String codeNumber)
     {
-        mark = 0;
+        mark = -1;
         this.moduleTitle = moduleTitle;
         this.codeNumber = codeNumber;
         completed = false;
@@ -64,7 +64,14 @@ public class Module
     public String getTitle(){
         return this.moduleTitle;
     }
-
+    
+    /**
+     * This will return if the module is compelted
+     */
+    public boolean isCompleted()
+    {
+        return mark >= 0;
+    }
    
     public void setTitle(String moduleTitle)
     {
