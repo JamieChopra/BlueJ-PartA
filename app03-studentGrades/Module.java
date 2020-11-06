@@ -4,7 +4,7 @@
  * number and mark in a percentage.
  *
  * @author Jamie Chopra
- * @version (a version number or a date)
+ * @version 0.1
  */
 public class Module
 {
