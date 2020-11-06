@@ -79,7 +79,11 @@ public class Module
     {
         this.moduleTitle = moduleTitle;
     }
-
+    
+    public int getCredit()
+    {
+        return credit;
+    }
    
     public String getCodeNumber()
     {

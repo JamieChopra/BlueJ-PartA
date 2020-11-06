@@ -18,7 +18,6 @@ public class Course
     private int finalMark;
     
     private Grades finalGrade;
-    
     /**;
      * Constructor to initialize the strings title and codeNumber
      */
@@ -47,7 +46,10 @@ public class Course
     {
         if(moduleNumber == 1)
         {
-            this.module1 = module;
+            this.module1 = module1;
+            this.module2 = module2;
+            this.module3 = module3;
+            this.module4 = module4; 
         }
     }
     
@@ -114,6 +116,8 @@ public class Course
             module4.print();
             System.out.println();
             System.out.println("Final Mark= " + finalMark);
+            System.out.println();
+            System.out.println("Final Grade= " + convertToGrade(finalMark));
         }
     }
     
