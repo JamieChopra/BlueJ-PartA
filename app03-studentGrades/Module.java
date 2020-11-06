@@ -23,7 +23,21 @@ public class Module
         this.title = title;
         this.codeNumber = codeNumber;
     }
-
+    
+    public void awardMark(int mark)
+    {
+            if ((mark >= 0) && (mark <= 100))
+            {
+                this.mark = mark;
+            }
+            else
+            {
+                System.out.println("The mark that has been awarded is invalid.");
+            
+            }
+            
+    }
+    
     public void print()
     {
         System.out.println("Module: " + title + "" + codeNumber + "Mark" + mark);
