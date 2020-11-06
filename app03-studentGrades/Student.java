@@ -18,7 +18,7 @@ public class Student
     private int credits;
     
     private Course course;
-    
+   
     /**
      * Create a new student with a given name and ID number.
      */
@@ -91,5 +91,6 @@ public class Student
     public void enrolOnCourse(Course course)
     {
         this.course = course;
+        
     }
 }

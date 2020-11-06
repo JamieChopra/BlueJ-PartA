@@ -14,7 +14,7 @@ public class Course
     private Module module2;
     private Module module3;
     private Module module4;
-    
+  
     private int finalMark;
     
     private Grades finalGrade;
@@ -25,9 +25,15 @@ public class Course
     public Course(String title, String codeNumber)
     {
        this.title = title;
+       this.finalMark = 0;
+       this.finalGrade = null;
        this.codeNumber = codeNumber;
-       
-       
+       createModule();
+    }
+    
+    
+    private void createModule()
+    {
        module1 = new Module("Programming Concepts", " CO452");
        module2 = new Module("Web Development", " CO456");
        module3 = new Module("Computer Architectures", "CO450");
@@ -35,11 +41,31 @@ public class Course
     }
     
     /**
-     * Method for adding marks together
+     * Method for adding modules
      */
-    public void addMark(int mark, int moduleNumber)
+    public void addModule(Module module, int moduleNumber)
     {
         if(moduleNumber == 1)
+        {
+            this.module1 = module;
+        }
+        
+        
+    }
+    
+    public void calculateFinalMark()
+    {
+        int totalMark = module1.getMark() + module2.getMark() + 
+            module3.getMark() + module4.getMark();
+            
+        finalMark = totalMark / 4;
+        
+       System.out.println("Final Mark= " + finalMark);
+    }
+    
+    public void setMark(int mark, String codeNo)
+    {
+        if(module1.getCodeNumber() == codeNumber)
         {
             module1.awardMark(mark);
         }
@@ -48,10 +74,20 @@ public class Course
     /**
      * Prints the course details out
      */
-    public void print()
+     public void print()
     
-    { System.out.println("Course:" + title + "" + codeNumber);
-    }
+    { //createCourse();
+      System.out.println("Course: " + title);
+      System.out.println("Code Number: " + codeNumber);
+      System.out.println("Modules enrolled on: ");
+      
+      module1.print();
+      module2.print();
+      module3.print();
+      module4.print();
+}
+    
+    
     
     public Grades convertToGrade(int mark)
     {

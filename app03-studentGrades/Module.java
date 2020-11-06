@@ -8,23 +8,26 @@
  */
 public class Module
 {
-    private String title;
+    public String moduleTitle;
     
-    private String codeNumber;
+    public String codeNumber;
     
-    private int mark;
+    public int mark;
+    
+    private int credit;
     
     private boolean completed;
     
     /**
      * Constructor for objects of class Module
      */
-    public Module(String title, String codeNumber)
+    public Module(String moduleTitle, String codeNumber)
     {
         mark = 0;
-        this.title = title;
+        this.moduleTitle = moduleTitle;
         this.codeNumber = codeNumber;
         completed = false;
+        credit = 15;
     }
     
     public void awardMark(int mark)
@@ -33,28 +36,39 @@ public class Module
             {
                 this.mark = mark;
                 if(mark >= 40)completed = true;
+                System.out.println("Your mark for this module is: " + mark + "%");
             }
             else
             {
                 System.out.println("The mark that has been awarded is invalid.");
             
             }
+            if (mark >= 40)
+            {
+                System.out.println("You have passed this module");
             
+            }
+            else
+            {
+                System.out.println("You have failed this module");
+            }
     }
     
     public void print()
     {
-        System.out.println("Module: " + title + "" + codeNumber + "Mark" + mark);
+        System.out.println("Module: " + moduleTitle);
+        System.out.println("Code Number: " + codeNumber);
+        System.out.println("Mark: " + mark);
     }
 
     public String getTitle(){
-        return this.title;
+        return this.moduleTitle;
     }
 
    
-    public void setTitle(String title)
+    public void setTitle(String moduleTitle)
     {
-        this.title = title;
+        this.moduleTitle = moduleTitle;
     }
 
    
