@@ -40,16 +40,18 @@ public class Module
             }
             else
             {
+                completed = false;
                 System.out.println("The mark that has been awarded is invalid.");
-            
             }
             if (mark >= 40)
             {
+                completed = true;
                 System.out.println("You have passed this module");
             
             }
             else
             {
+                completed = false;
                 System.out.println("You have failed this module");
             }
     }
@@ -66,7 +68,7 @@ public class Module
     }
     
     /**
-     * This will return if the module is compelted
+     * This will return whether the module is compelted
      */
     public boolean isCompleted()
     {

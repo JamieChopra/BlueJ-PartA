@@ -49,8 +49,6 @@ public class Course
         {
             this.module1 = module;
         }
-        
-        
     }
     
     public void calculateFinalMark()
@@ -62,7 +60,7 @@ public class Course
             
         finalMark = totalMark / 4;
         
-        print();
+        printCourseInfo();
     }
     else
     {
@@ -94,12 +92,12 @@ public class Course
     /**
      * Prints the course details out
      */
-     public void print()
+     public void printCourseInfo()
     
     { //createCourse();
       System.out.println("Course: " + title);
       System.out.println("Code Number: " + codeNumber);
-}
+    }
     
     public void printModules()
     {
@@ -116,11 +114,13 @@ public class Course
             module4.print();
             System.out.println();
             System.out.println("Final Mark= " + finalMark);
-        
         }
-    
     }
     
+    public void getTitle(String title)
+    {
+        this.title = title;
+    }
     public Grades convertToGrade(int mark)
     {
         if ((mark >=0) && (mark < 40))

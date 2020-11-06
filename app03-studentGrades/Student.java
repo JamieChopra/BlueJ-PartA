@@ -91,6 +91,6 @@ public class Student
     public void enrolOnCourse(Course course)
     {
         this.course = course;
-        
+        System.out.println("You have enrolled on a new course!");
     }
 }
