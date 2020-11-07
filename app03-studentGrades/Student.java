@@ -18,7 +18,6 @@ public class Student
     private int credits;
     
     private Course course;
-   
     /**
      * Create a new student with a given name and ID number.
      */
@@ -27,6 +26,10 @@ public class Student
         name = fullName;
         id = studentID;
         credits = 0;
+        System.out.println("A new Student has been created");
+        System.out.println("Student ID: " + id);
+        System.out.println("Student Name: " + name);
+        System.out.println();
     }
 
     /**
@@ -91,6 +94,6 @@ public class Student
     public void enrolOnCourse(Course course)
     {
         this.course = course;
-        System.out.println("You have enrolled on a new course!");
+        System.out.println("You have enrolled on a new course");
     }
 }

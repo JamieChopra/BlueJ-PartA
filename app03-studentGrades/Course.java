@@ -23,11 +23,14 @@ public class Course
      */
     public Course(String title, String codeNumber)
     {
-       this.title = title;
+      this.title = title;
        this.finalMark = 0;
        this.finalGrade = null;
        this.codeNumber = codeNumber;
        createModule();
+       System.out.println("A new course has been created");
+       System.out.println("Course: " + title);
+       System.out.println("Course code: " + codeNumber);
     }
     
     
@@ -57,16 +60,16 @@ public class Course
     {
         if(courseCompleted())
         {
-        int totalMark = module1.getMark() + module2.getMark() + 
+            int totalMark = module1.getMark() + module2.getMark() + 
             module3.getMark() + module4.getMark();
             
-        finalMark = totalMark / 4;
+            finalMark = totalMark / 4;
         
-        printCourseInfo();
+            printCourseInfo();
     }
-    else
+    else 
     {
-    
+        System.out.println("All four modules must be completed before calculating a final mark");
     }
     }
     
@@ -98,13 +101,11 @@ public class Course
     
     { //createCourse();
       System.out.println("Course: " + title);
-      System.out.println("Code Number: " + codeNumber);
+      System.out.println("Course Code: " + codeNumber);
     }
     
     public void printModules()
     {
-        if(courseCompleted())
-        {
             System.out.println("Modules enrolled on: ");
             System.out.println();
             module1.print();
@@ -118,14 +119,17 @@ public class Course
             System.out.println("Final Mark= " + finalMark);
             System.out.println();
             System.out.println("Final Grade= " + convertToGrade(finalMark));
-        }
+            
     }
     
     public void getTitle(String title)
     {
         this.title = title;
+  
     }
-    public Grades convertToGrade(int mark)
+  
+    
+     public Grades convertToGrade(int mark)
     {
         if ((mark >=0) && (mark < 40))
         {

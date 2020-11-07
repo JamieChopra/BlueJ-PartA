@@ -28,6 +28,9 @@ public class Module
         this.codeNumber = codeNumber;
         completed = false;
         credit = 15;
+        System.out.println("A new module has been created");
+        System.out.println("Module: " + moduleTitle);
+        System.out.println("Module Code: " + codeNumber);
     }
     
     public void awardMark(int mark)
@@ -59,8 +62,8 @@ public class Module
     public void print()
     {
         System.out.println("Module: " + moduleTitle);
-        System.out.println("Code Number: " + codeNumber);
-        System.out.println("Mark: " + mark);
+        System.out.println("Module Code: " + codeNumber);
+        System.out.println("Mark: " + mark + "%");
     }
 
     public String getTitle(){
