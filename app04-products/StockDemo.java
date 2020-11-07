@@ -1,4 +1,5 @@
 
+
 import java.util.Random;
 /**
  *
@@ -17,13 +18,18 @@ public class StockDemo
     // The stock manager.
     private StockManager manager;
     
+    private Product product;
+    
     private Random generator;
+    
+    private String name = "P";
     /**
      * Create a StockManager and populate it with a few
      * sample products.
      */
     public StockDemo(StockManager manager)
     {
+        
         generator = new Random();
         this.manager = manager;
         
@@ -41,7 +47,19 @@ public class StockDemo
         manager.addProduct(new Product(110, "Peaches"));
     }
     
-    /**
+    public void startswithProduct()
+      {
+     for(int id = 101; id <= 110; id++)
+           {
+        if(name.startsWith("P"))
+        {
+            manager.printDetails(id);
+            System.out.println("Products starting with P are: " + id);
+        }
+    }
+    }
+    
+     /**
      * Provide a very simple demonstration of how a StockManager
      * might be used. Details of one product are shown, the
      * product is restocked, and then the details are shown again.
@@ -49,10 +67,15 @@ public class StockDemo
     public void runDemo()
     {
         // Show details of all of the products.
+        System.out.println("\n################################");
+        System.out.println("##    Jamie's Stock List      ##");  
+        System.out.println("################################\n");
+        
         manager.printAllProducts();
         
         demoDelivery();
-        manager.printAllProducts();
+        
+        demoSell();
     }
     
     /**
@@ -60,9 +83,11 @@ public class StockDemo
      */
     private void demoDelivery()
     {
-      int amount = 0;
+        printHeading("Delivery");
+        
+        int amount = 0;
       
-      for(int id = 101; id <= 110; id++)
+        for(int id = 101; id <= 110; id++)
         { 
             amount = generator.nextInt(7) + 1;
             manager.deliverProduct(id, amount);
@@ -71,11 +96,20 @@ public class StockDemo
         
     }
     
+    private void printHeading(String verb)
+    {
+      System.out.println();
+      System.out.println("Demonstrating the Product " + verb);
+      System.out.println();
+    }
+    
     /**
      * Delivery method in which the stock is increased using a for statement.
      */
      private void demoSell()
      {
+      printHeading("Sell");
+      
       int amount = 0;
       
       for(int id = 101; id <= 110; id++)
