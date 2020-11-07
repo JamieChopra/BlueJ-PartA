@@ -1,3 +1,4 @@
+
 import java.util.Random;
 /**
  *
@@ -11,6 +12,8 @@ import java.util.Random;
  */
 public class StockDemo
 {   
+    public static final int FIRST_ID = 101;
+    
     // The stock manager.
     private StockManager manager;
     
@@ -23,6 +26,8 @@ public class StockDemo
     {
         generator = new Random();
         this.manager = manager;
+        
+        int id = FIRST_ID;
         
         manager.addProduct(new Product(101, "Apple"));
         manager.addProduct(new Product(102, "Pineapple"));
@@ -47,7 +52,6 @@ public class StockDemo
         manager.printAllProducts();
         
         demoDelivery();
-        
         manager.printAllProducts();
     }
     
@@ -60,26 +64,24 @@ public class StockDemo
       
       for(int id = 101; id <= 110; id++)
         { 
-            amount = generator.nextInt(10) + 1;
+            amount = generator.nextInt(7) + 1;
             manager.deliverProduct(id, amount);
             amount++;
         }
+        
     }
     
     /**
      * Delivery method in which the stock is increased using a for statement.
      */
-    private void demoSell()
-    {
+     private void demoSell()
+     {
       int amount = 0;
       
       for(int id = 101; id <= 110; id++)
         { 
-            amount = generator.nextInt(10) + 1;
-            manager.sellProduct(id);
-            amount++;
+            amount = generator.nextInt(7) + 1;
+            manager.sellProduct(id, amount);
         }
-
-    
     }
 }
