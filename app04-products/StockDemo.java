@@ -1,4 +1,8 @@
+import java.util.Random;
 /**
+ *
+ * 
+ * 
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
  * the StockManager class is completed.
@@ -7,7 +11,7 @@
  * @version 2016.02.29
  */
 public class StockDemo
-{
+{   
     // The stock manager.
     private StockManager manager;
 
@@ -40,7 +44,23 @@ public class StockDemo
     {
         // Show details of all of the products.
         manager.printAllProducts();
+        
+        demoDelivery();
+        
+        manager.printAllProducts();
     }
     
-    
+    /**
+     * Delivery method in which the stock is increased using a for statement.
+     */
+    private void demoDelivery()
+    {
+      int amount = 1;
+      
+      for(int id = 101; id <= 110; id++)
+        { 
+            manager.deliverProduct(id, amount);
+            amount++;
+        }
+    }
 }
