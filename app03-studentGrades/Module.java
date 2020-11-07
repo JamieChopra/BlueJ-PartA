@@ -80,10 +80,10 @@ public class Module
     {
         if (mark>=0)
         {
-        return true;
+        return completed = true;
     }
     else{
-        return false;
+        return completed = false;
     }
 }
     

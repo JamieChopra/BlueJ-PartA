@@ -93,4 +93,11 @@ public class Product
                 "Attempt to sell an out of stock item: " + name);
         }
     }
+
+    
+    public void setName(String name){
+        this.name = name;
+    }//end method setName
+
+    
 }

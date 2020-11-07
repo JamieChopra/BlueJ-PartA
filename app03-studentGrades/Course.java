@@ -50,11 +50,14 @@ public class Course
     public void addModule(Module module, int moduleNumber)
     {
         if(moduleNumber == 1)
-        {
-            this.module1 = module1;
-            this.module2 = module2;
-            this.module3 = module3;
-            this.module4 = module4; 
+        
+            {this.module1 = module;}
+        else if(moduleNumber == 2)    
+            {this.module2 = module;}
+        else if(moduleNumber == 3)
+            {this.module3 = module;}
+        else if(moduleNumber == 4)
+            {this.module4 = module; 
         }
     }
     
