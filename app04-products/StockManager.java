@@ -121,8 +121,6 @@ public class StockManager
             printHeading();
             System.out.println(product);
         }
-        
-
     }
 
     private void printHeading()

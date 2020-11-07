@@ -29,7 +29,6 @@ public class Product
     public void renameProductWithID()
     {
         getID();
-        setName();
     }
     
     /**
