@@ -66,12 +66,17 @@ public class Product
      */
     public void increaseQuantity(int amount)
     {
-        if(amount > 0) 
+        if(quantity >= amount && quantity > 0) 
         {
             quantity += amount;
+            System.out.println("Sold " + amount + "" + name);
         }
-        else 
+        else if(amount > quantity)
         {
+            System.out.println("There is Insufficient stock, Current stock= " + quantity + " Amount Ordered= " + amount);
+            quantity = 0;
+        }
+        else{
             System.out.println("Attempt to restock " + name +
                                " with a non-positive amount: " + amount);
         }
@@ -81,11 +86,11 @@ public class Product
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
      */
-    public void sellOne()
+    public void sell(int amount)
     {
-        if(quantity > 0) 
+        if(quantity >= amount) 
         {
-            quantity--;
+            quantity-= amount;
         }
         else 
         {
