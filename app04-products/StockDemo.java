@@ -19,9 +19,9 @@ public class StockDemo
     {
         this.manager = manager;
         
-        manager.addProduct(new Product(132, "Clock Radio"));
-        manager.addProduct(new Product(37,  "Mobile Phone"));
-        manager.addProduct(new Product(23,  "Microwave Oven"));
+        manager.addProduct(new Product(101, "Clock Radio"));
+        manager.addProduct(new Product(102,  "Mobile Phone"));
+        manager.addProduct(new Product(103,  "Microwave Oven"));
     }
     
     /**
@@ -32,10 +32,10 @@ public class StockDemo
     public void demo()
     {
         // Show details of all of the products.
-        manager.printProductDetails();
+        manager.printAllProducts();
         // Take delivery of 5 items of one of the products.
         manager.delivery(132, 5);
-        manager.printProductDetails();
+        manager.printAllProducts();
     }
     
     /**

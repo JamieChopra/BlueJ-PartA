@@ -1,0 +1,113 @@
+Student student1 = new Student("Jamie", "220");
+A new Student has been created
+Student ID: 220
+Student Name: Jamie
+
+Course course1 = new Course("Computing", "G400");
+A new course has been created
+Course: Computing
+Course code: G400
+student1.enrolOnCourse(course1);
+You have enrolled on a new course
+Module module1 = new Module("Digital Technologies", "C0454");
+module1.awardMark(60);
+Your mark for this module is: 60%
+You have passed this module
+Module module2 = new Module("Computer Architectures", "C0450");
+Module module3 = new Module("Web Development", "C0456");
+Module module4 = new Module("Programming Concepts", "C0452");
+course1.printModules();
+Modules enrolled on: 
+
+Module: Programming Concepts
+Module Code:  CO452
+Mark: -1%
+
+Module: Web Development
+Module Code:  CO456
+Mark: -1%
+
+Module: Computer Architectures
+Module Code: CO450
+Mark: -1%
+
+Module: Digital Technologies
+Module Code: CO454
+Mark: -1%
+
+Final Mark= 0
+
+Final Grade= F
+
+Final Credit= 0
+module1.awardMark(60);
+Your mark for this module is: 60%
+You have passed this module
+module2.awardMark(70);
+Your mark for this module is: 70%
+You have passed this module
+module3.awardMark(50);
+Your mark for this module is: 50%
+You have passed this module
+module4.awardMark(62);
+Your mark for this module is: 62%
+You have passed this module
+course1.courseCompleted()
+    returned boolean false
+module1.isCompleted()
+    returned boolean true
+course1.addModule(module1, 1);
+course1.addModule(module2, 2);
+course1.addModule(module3, 3);
+course1.addModule(module4, 4);
+course1.printModules();
+Modules enrolled on: 
+
+Module: Digital Technologies
+Module Code: C0454
+Mark: 60%
+
+Module: Computer Architectures
+Module Code: C0450
+Mark: 70%
+
+Module: Web Development
+Module Code: C0456
+Mark: 50%
+
+Module: Programming Concepts
+Module Code: C0452
+Mark: 62%
+
+Final Mark= 0
+
+Final Grade= F
+
+Final Credit= 0
+course1.calculateFinalMark();
+Course: Computing
+Course Code: G400
+course1.printModules();
+Modules enrolled on: 
+
+Module: Digital Technologies
+Module Code: C0454
+Mark: 60%
+
+Module: Computer Architectures
+Module Code: C0450
+Mark: 70%
+
+Module: Web Development
+Module Code: C0456
+Mark: 50%
+
+Module: Programming Concepts
+Module Code: C0452
+Mark: 62%
+
+Final Mark= 60
+
+Final Grade= B
+
+Final Credit= 60
