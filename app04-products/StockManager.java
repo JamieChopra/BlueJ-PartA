@@ -118,8 +118,21 @@ public class StockManager
     {
         for(Product product: stock)
         {
+            printHeading();
             System.out.println(product);
         }
         
+
     }
+
+    private void printHeading()
+    {
+        System.out.println();
+        System.out.println("################################");
+        System.out.println("##    Jamie's Stock List      ##");  
+        System.out.println("################################");
+        System.out.println();
+    }
+
 }
+
