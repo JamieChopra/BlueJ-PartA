@@ -25,7 +25,13 @@ public class Product
         this.name = name;
         quantity = 0;
     }
-
+    
+    public void renameProductWithID()
+    {
+        getID();
+        setName();
+    }
+    
     /**
      * @return The product's id.
      */
@@ -66,16 +72,11 @@ public class Product
      */
     public void increaseQuantity(int amount)
     {
-        if(quantity >= amount && quantity > 0) 
+        if(amount > 0) 
         {
             quantity += amount;
-            System.out.println("Sold " + amount + "" + name);
         }
-        else if(amount > quantity)
-        {
-            System.out.println("There is Insufficient stock, Current stock= " + quantity + " Amount Ordered= " + amount);
-            quantity = 0;
-        }
+        
         else{
             System.out.println("Attempt to restock " + name +
                                " with a non-positive amount: " + amount);
@@ -88,11 +89,17 @@ public class Product
      */
     public void sell(int amount)
     {
-        if(quantity >= amount) 
+        if(quantity >= amount && quantity > 0) 
         {
             quantity-= amount;
+            System.out.println("Sold " + amount + " of " + name);
         }
-        else 
+        else if (amount > quantity && quantity > 0)
+        {
+            System.out.println("There is Insufficient stock, Current stock= " + quantity + " Amount Ordered= " + amount);
+            quantity = 0;
+        }
+        else
         {
             System.out.println(
                 "Attempt to sell an out of stock item: " + name);
