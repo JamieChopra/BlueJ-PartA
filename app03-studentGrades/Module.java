@@ -28,9 +28,6 @@ public class Module
         this.codeNumber = codeNumber;
         completed = false;
         credit = 15;
-        System.out.println("A new module has been created");
-        System.out.println("Module: " + moduleTitle);
-        System.out.println("Module Code: " + codeNumber);
     }
     
     public void awardMark(int mark)
@@ -65,7 +62,13 @@ public class Module
         System.out.println("Module Code: " + codeNumber);
         System.out.println("Mark: " + mark + "%");
     }
-
+       
+    public void printCreation(){
+        System.out.println("A new module has been created");
+        System.out.println("Module: " + moduleTitle);
+        System.out.println("Module Code: " + codeNumber);
+    }
+      
     public String getTitle(){
         return this.moduleTitle;
     }
@@ -75,9 +78,15 @@ public class Module
      */
     public boolean isCompleted()
     {
-        return mark >= 0;
+        if (mark>=0)
+        {
+        return true;
     }
-   
+    else{
+        return false;
+    }
+}
+    
     public void setTitle(String moduleTitle)
     {
         this.moduleTitle = moduleTitle;

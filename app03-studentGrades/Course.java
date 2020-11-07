@@ -14,23 +14,25 @@ public class Course
     private Module module2;
     private Module module3;
     private Module module4;
+    private boolean courseComp = false;
   
     private int finalMark;
-    
-    private Grades finalGrade;
+    private int credit;
+    private Grades finalGrade = null;
     /**;
      * Constructor to initialize the strings title and codeNumber
      */
     public Course(String title, String codeNumber)
     {
-      this.title = title;
+       this.title = title;
        this.finalMark = 0;
+       this.credit = 0;
        this.finalGrade = null;
        this.codeNumber = codeNumber;
-       createModule();
        System.out.println("A new course has been created");
        System.out.println("Course: " + title);
        System.out.println("Course code: " + codeNumber);
+       createModule();
     }
     
     
@@ -64,18 +66,22 @@ public class Course
             module3.getMark() + module4.getMark();
             
             finalMark = totalMark / 4;
-        
+            
+            credit = module1.getCredit() + module2.getCredit() + 
+                module3.getCredit() + module4.getCredit();
+            
             printCourseInfo();
     }
     else 
     {
-        System.out.println("All four modules must be completed before calculating a final mark");
+        
     }
     }
     
     public boolean courseCompleted()
-    {
-        if((module1.isCompleted()) && (module2.isCompleted()))
+    {   
+        if((module1.isCompleted()) && (module2.isCompleted()) &&
+            ((module3.isCompleted()) && (module4.isCompleted())))
         {
             return true;
         }
@@ -119,15 +125,9 @@ public class Course
             System.out.println("Final Mark= " + finalMark);
             System.out.println();
             System.out.println("Final Grade= " + convertToGrade(finalMark));
-            
+            System.out.println();
+            System.out.println("Final Credit= " + credit);
     }
-    
-    public void getTitle(String title)
-    {
-        this.title = title;
-  
-    }
-  
     
      public Grades convertToGrade(int mark)
     {
