@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class StockManager
 {
     // A list of the products.
-    private ArrayList<Product> stock;
+    public ArrayList<Product> stock;
 
     /**
      * Initialise the stock manager.
@@ -123,6 +123,9 @@ public class StockManager
         }
     }
 
+    /**
+     * Method for printing the heading for the stocklist
+     */
     private void printHeading()
     {
         System.out.println();

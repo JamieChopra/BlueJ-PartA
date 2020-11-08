@@ -1,6 +1,6 @@
     
     
-    import java.util.Random;
+    import java.util.Random; import java.util.ArrayList;
     /**
      *
      * Demonstrate the StockManager and Product classes.
@@ -19,19 +19,23 @@
         private StockManager manager;
         
         private Product product;
-        
+        //Random number generator
         private Random generator;
+        //attempt at a new array list
+        private ArrayList<Product> startsWithList;
         
         private String name = "P";
         /**
          * Create a StockManager and populate it with a few
-         * sample products.
+         * sample products, attempt at a new array list and a generator.
          */
         public StockDemo(StockManager manager)
         {
             
             generator = new Random();
             this.manager = manager;
+            
+            startsWithList = new ArrayList<>();
             
             int id = FIRST_ID;
             
@@ -47,18 +51,20 @@
             manager.addProduct(new Product(110, "Peaches"));
         }
         
-        public void startswithProduct()
+        /** Attempt Requirement 7: Printing a list of products based on product name 
+         * All products were printed instead of just the products starting with "P"
+         * 
+         * public void startswithProduct()
           {
          for(int id = 101; id <= 110; id++)
                {
-            if(name.startsWith("P"))
+            if(manager.printDetails.contains(name))
             {
-                manager.printDetails(id);
-                System.out.println("Products starting with P are: " + id);
+              System.out.println("Products starting with P are: " + manager.findProduct());
             }
         }
         }
-        
+        */
          /**
          * Provide a very simple demonstration of how a StockManager
          * might be used. Details of one product are shown, the
@@ -76,6 +82,8 @@
             demoDelivery();
             
             demoSell();
+            
+            printLowStock();
         }
         
         /**
@@ -96,6 +104,9 @@
             
         }
         
+        /**
+         * Method for printing the heading when demonstrating the product's delivery and sell methods
+         */
         private void printHeading(String verb)
         {
           System.out.println();
@@ -119,13 +130,19 @@
             }
         }
     
-        public void printLowStock(int amount)
+        /**
+         * Method for printing all items with little stock.
+         */
+        private void printLowStock()
         {
-            for(int id = 101; id <= 110; id++)
+          int amount = 0;
+         
+             for(int id = 101; id <= 110; id++)
          { 
-          if(amount > 2)
+          if(amount < 2)
           {
-            System.out.println("Stock levels are low for IDs: " + id);
+              System.out.println();
+              System.out.println("Stock levels are low for IDs: " + id);
           }
          }
         }

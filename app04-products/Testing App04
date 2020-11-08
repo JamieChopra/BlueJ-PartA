@@ -1,0 +1,134 @@
+StockManager First = new StockManager();
+StockDemo stockDem1 = new StockDemo(First);
+stockDem1.runDemo();
+
+################################
+##    Jamie's Stock List      ##
+################################
+
+
+################################
+##    Jamie's Stock List      ##
+################################
+
+101: Apple stock level: 0
+
+################################
+##    Jamie's Stock List      ##
+################################
+
+102: Pineapple stock level: 0
+
+################################
+##    Jamie's Stock List      ##
+################################
+
+103: Water Melon stock level: 0
+
+################################
+##    Jamie's Stock List      ##
+################################
+
+104: Banana stock level: 0
+
+################################
+##    Jamie's Stock List      ##
+################################
+
+105: Cherries stock level: 0
+
+################################
+##    Jamie's Stock List      ##
+################################
+
+106: Grapes stock level: 0
+
+################################
+##    Jamie's Stock List      ##
+################################
+
+107: Lemon stock level: 0
+
+################################
+##    Jamie's Stock List      ##
+################################
+
+108: Mango stock level: 0
+
+################################
+##    Jamie's Stock List      ##
+################################
+
+109: Pear stock level: 0
+
+################################
+##    Jamie's Stock List      ##
+################################
+
+110: Peaches stock level: 0
+
+Demonstrating the Product Delivery
+
+Product Delivered: 101: Apple stock level: 6
+Product Delivered: 102: Pineapple stock level: 4
+Product Delivered: 103: Water Melon stock level: 2
+Product Delivered: 104: Banana stock level: 6
+Product Delivered: 105: Cherries stock level: 7
+Product Delivered: 106: Grapes stock level: 7
+Product Delivered: 107: Lemon stock level: 2
+Product Delivered: 108: Mango stock level: 2
+Product Delivered: 109: Pear stock level: 7
+Product Delivered: 110: Peaches stock level: 1
+
+Demonstrating the Product Sell
+
+101: Apple stock level: 6
+Sold 3 of Apple
+101: Apple stock level: 3
+102: Pineapple stock level: 4
+There is Insufficient stock, Current stock= 4 Amount Ordered= 6
+102: Pineapple stock level: 0
+103: Water Melon stock level: 2
+There is Insufficient stock, Current stock= 2 Amount Ordered= 5
+103: Water Melon stock level: 0
+104: Banana stock level: 6
+There is Insufficient stock, Current stock= 6 Amount Ordered= 7
+104: Banana stock level: 0
+105: Cherries stock level: 7
+Sold 7 of Cherries
+105: Cherries stock level: 0
+106: Grapes stock level: 7
+Sold 2 of Grapes
+106: Grapes stock level: 5
+107: Lemon stock level: 2
+There is Insufficient stock, Current stock= 2 Amount Ordered= 5
+107: Lemon stock level: 0
+108: Mango stock level: 2
+There is Insufficient stock, Current stock= 2 Amount Ordered= 6
+108: Mango stock level: 0
+109: Pear stock level: 7
+Sold 5 of Pear
+109: Pear stock level: 2
+110: Peaches stock level: 1
+There is Insufficient stock, Current stock= 1 Amount Ordered= 3
+110: Peaches stock level: 0
+
+Stock levels are low for IDs: 101
+
+Stock levels are low for IDs: 102
+
+Stock levels are low for IDs: 103
+
+Stock levels are low for IDs: 104
+
+Stock levels are low for IDs: 105
+
+Stock levels are low for IDs: 106
+
+Stock levels are low for IDs: 107
+
+Stock levels are low for IDs: 108
+
+Stock levels are low for IDs: 109
+
+Stock levels are low for IDs: 110

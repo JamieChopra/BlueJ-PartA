@@ -3,6 +3,8 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * 
+ * Modified by Jamie Chopra
  */
 public class Product
 {
@@ -12,7 +14,8 @@ public class Product
     private String name;
     // The quantity of this product in stock.
     private int quantity;
-
+    
+    private StockManager manager;
     /**
      * Constructor for objects of class Product.
      * The initial stock quantity is zero.
@@ -26,11 +29,21 @@ public class Product
         quantity = 0;
     }
     
-    public void renameProductWithID()
+    /**Attempt at 4. Renaming a product based on part of the product name.
+     * 
+     * 
+     * public void renameProductWithID(int id, String name)
     {
-        getID();
+        for(int i=0; i<10; i++)
+        {
+         if(manager.stock.get(i).getID() == id)
+         {
+             System.out.println("Works");
+        }
+        //setName();
     }
-    
+    }
+    */
     /**
      * @return The product's id.
      */
@@ -106,9 +119,12 @@ public class Product
     }
 
     
+    /**
+     * Method for setting the name of a product.
+     */
     public void setName(String name){
         this.name = name;
-    }//end method setName
+    }
 
     
 }
