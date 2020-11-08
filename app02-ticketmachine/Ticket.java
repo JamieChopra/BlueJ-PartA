@@ -29,12 +29,18 @@ public class Ticket
         destination = "Aylesbury";
     }
     
+    /**
+     * Second Constructor for price and destination
+     */
     public Ticket(String destination, int price)
     {
         this.price = price;
         this.destination = destination;
     }
     
+    /**
+     * Gets the price of the ticket
+     */
     public void getPrice()
     {
         this.price = price;

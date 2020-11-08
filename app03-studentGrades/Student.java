@@ -91,6 +91,10 @@ public class Student
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
     }
     
+    /**
+     * Method to allow the student to enrol on a course and therefore links the student
+     * object and course object
+     */
     public void enrolOnCourse(Course course)
     {
         this.course = course;

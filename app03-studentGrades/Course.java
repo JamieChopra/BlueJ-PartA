@@ -7,7 +7,9 @@
  */
 public class Course
 {
+    //Courses title
     private String title;
+    //Courses code number
     private String codeNumber;
     
     private Module module1;
@@ -15,8 +17,9 @@ public class Course
     private Module module3;
     private Module module4;
     private boolean courseComp = false;
-  
+    
     private int finalMark;
+    //Courses credits
     private int credit;
     private Grades finalGrade = null;
     /**;
@@ -36,6 +39,9 @@ public class Course
     }
     
     
+    /**
+     * Method for creating a new module, a maximum of four modules can be created and assigned to a course.
+     */
     private void createModule()
     {
        module1 = new Module("Programming Concepts", " CO452");
@@ -44,7 +50,7 @@ public class Course
        module4 = new Module("Digital Technologies", "CO454");
     }
     
-    /**
+     /**
      * Method for adding modules
      */
     public void addModule(Module module, int moduleNumber)
@@ -61,6 +67,9 @@ public class Course
         }
     }
     
+    /**
+     * Method for calculating and printing the final mark between all modules of a course
+     */
     public void calculateFinalMark()
     {
         if(courseCompleted())
@@ -81,6 +90,9 @@ public class Course
     }
     }
     
+    /**
+     * Method for determining whether the student is successful or not in completing a course.
+     */
     public boolean courseCompleted()
     {   
         if((module1.isCompleted()) && (module2.isCompleted()) &&
@@ -94,7 +106,9 @@ public class Course
         }
     }
     
-    
+    /**
+     * Method for setting and awarding a mark.
+     */
     public void setMark(int mark, String codeNo)
     {
         if(module1.getCodeNumber() == codeNumber)
@@ -104,7 +118,7 @@ public class Course
     }
     
     /**
-     * Prints the course details out
+      * Prints the course details out
      */
      public void printCourseInfo()
     
@@ -113,6 +127,9 @@ public class Course
       System.out.println("Course Code: " + codeNumber);
     }
     
+    /**
+     * Prints all details of modules along with the final mark, grade and credit
+     */
     public void printModules()
     {
             System.out.println("Modules enrolled on: ");
@@ -132,7 +149,10 @@ public class Course
             System.out.println("Final Credit= " + credit);
     }
     
-     public Grades convertToGrade(int mark)
+    /**
+     * Method for converting marks into grades, refers to enumeration for grades.
+     */
+    public Grades convertToGrade(int mark)
     {
         if ((mark >=0) && (mark < 40))
         {

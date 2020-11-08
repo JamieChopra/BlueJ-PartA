@@ -167,7 +167,7 @@ public class TicketMachine
     }
     
     /**
-     * Inserting money into ticket machine
+     * Method for inserting 20p into ticket machine
      */
   
     public void insert20p()
@@ -195,7 +195,7 @@ public class TicketMachine
     }
     
     /**
-     * 
+     * Method for printing the current balance out
      */
     public void printBalance(int amount)
     {
