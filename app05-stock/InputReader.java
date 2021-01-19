@@ -11,6 +11,7 @@ import java.util.Scanner;
  */
 public class InputReader {
     private Scanner reader;
+    boolean firstInput = false;
 
     /**
      * Create a new InputReader that reads text from the text terminal.
@@ -28,26 +29,36 @@ public class InputReader {
     public String getInput() {
         System.out.print("> ");         // print prompt
         String inputLine = reader.nextLine();
-        takeInput(inputLine);
+
+        if(!firstInput)
+        {
+            takeInput(inputLine);
+        }
         return inputLine;
     }
 
-    public String takeInput(String takingInput)
+    public boolean takeInput(String takingInput)
     {
-
 
         if(takingInput == "Quit")
         {
             quitProgram();
+            firstInput = true;
         }
         else if(takingInput == "Add"){
             addProduct();
+            firstInput = true;
         }
         else if(takingInput == "Remove")
         {
             printAllProducts();
+            firstInput = true;
         }
-        else if()
+        else
+            {
+                firstInput = false;
+            }
+        return firstInput;
     }
 
     /**
