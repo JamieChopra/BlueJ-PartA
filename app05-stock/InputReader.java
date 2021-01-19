@@ -28,11 +28,26 @@ public class InputReader {
     public String getInput() {
         System.out.print("> ");         // print prompt
         String inputLine = reader.nextLine();
-        if(inputLine == "Quit")
+        takeInput(inputLine);
+        return inputLine;
+    }
+
+    public String takeInput(String takingInput)
+    {
+
+
+        if(takingInput == "Quit")
         {
             quitProgram();
         }
-        return inputLine;
+        else if(takingInput == "Add"){
+            addProduct();
+        }
+        else if(takingInput == "Remove")
+        {
+            printAllProducts();
+        }
+        else if()
     }
 
     /**
@@ -42,5 +57,18 @@ public class InputReader {
     {
         System.out.println("You have quit the program.");
         System.exit(0);
+    }
+
+    public void addProduct()
+    {
+        if(getInput() == "Add")
+        {
+
+        }
+    }
+
+    public void printAllProducts()
+    {
+
     }
 }
