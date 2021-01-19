@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.HashSet;
 import java.util.Scanner;
 
@@ -8,15 +9,13 @@ import java.util.Scanner;
  * @author     Michael Kölling and David J. Barnes
  * @version    0.1 (2016.02.29)
  */
-public class InputReader
-{
+public class InputReader {
     private Scanner reader;
 
     /**
      * Create a new InputReader that reads text from the text terminal.
      */
-    public InputReader()
-    {
+    public InputReader() {
         reader = new Scanner(System.in);
     }
 
@@ -24,13 +23,24 @@ public class InputReader
      * Read a line of text from standard input (the text terminal),
      * and return it as a String.
      *
-     * @return  A String typed by the user.
+     * @return A String typed by the user.
      */
-    public String getInput()
-    {
+    public String getInput() {
         System.out.print("> ");         // print prompt
         String inputLine = reader.nextLine();
-
+        if(inputLine == "Quit")
+        {
+            quitProgram();
+        }
         return inputLine;
+    }
+
+    /**
+     * Quit method that terminates program.
+     */
+    public void quitProgram()
+    {
+        System.out.println("You have quit the program.");
+        System.exit(0);
     }
 }
