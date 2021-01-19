@@ -21,7 +21,7 @@ public class StockApp
     }
 
     /**
-     * 
+     * Runs the Program
      */
     public void run()
     {

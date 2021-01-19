@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class InputReader {
     private Scanner reader;
     boolean firstInput = false;
-    Manager inputManager = new Manager();
+    StockManager stockInput;
 
     /**
      * Create a new InputReader that reads text from the text terminal.
@@ -81,19 +81,12 @@ public class InputReader {
 
     public void addProduct()
     {
-        inputManager.addNewProduct(getInput());
-        firstInput = false;
-    }
 
-    public void removeProduct()
-    {
-        inputManager.removeProduct(getInput());
-        firstInput = false;
+
     }
 
     public void printAllProducts()
     {
-        inputManager.printList();
-        firstInput = false;
+
     }
 }

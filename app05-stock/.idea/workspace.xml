@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec919edd-ad40-4cd1-8b77-485003692ee4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/InputReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StockApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/StockApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -29,7 +40,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/production/app05-stock/.idea" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jwc25\OneDrive\Documents\GitHub\BlueJ-PartA\app05-stock\out\production\app05-stock\.idea" />
+      <recent name="C:\Users\jwc25\OneDrive\Documents\GitHub\BlueJ-PartA\app05-stock\out\production\app05-stock" />
+      <recent name="C:\Users\jwc25\OneDrive\Documents\GitHub\BlueJ-PartA\app05-stock\out" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jwc25\OneDrive\Documents\GitHub\BlueJ-PartA\app05-stock\out\production\app05-stock\.idea" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
