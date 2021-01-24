@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec919edd-ad40-4cd1-8b77-485003692ee4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/Program.java" afterDir="false" />
-    </list>
+    <list default="true" id="ec919edd-ad40-4cd1-8b77-485003692ee4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1nCZuKjB8STr3ozug7py6zT0fsL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -21,7 +34,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/production/app05-stock/.idea" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jwc25\OneDrive\Documents\GitHub\BlueJ-PartA\app05-stock\out\production\app05-stock\.idea" />
+      <recent name="C:\Users\jwc25\OneDrive\Documents\GitHub\BlueJ-PartA\app05-stock\out\production\app05-stock" />
+      <recent name="C:\Users\jwc25\OneDrive\Documents\GitHub\BlueJ-PartA\app05-stock\out" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jwc25\OneDrive\Documents\GitHub\BlueJ-PartA\app05-stock\out\production\app05-stock\.idea" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -58,5 +87,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

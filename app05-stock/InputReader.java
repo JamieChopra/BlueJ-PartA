@@ -47,18 +47,20 @@ public class InputReader {
     {
         if(takingInput.equals("Quit"))
         {
-            quitProgram();
             firstInput = true;
+            quitProgram();
 
         }
         else if(takingInput.equals("Add")){
-            addProduct();
+
             firstInput = true;
+            addProduct();
         }
         else if(takingInput.equals("Remove"))
         {
-            printAllProducts();
+
             firstInput = true;
+            printAllProducts();
         }
         else
             {
@@ -77,11 +79,13 @@ public class InputReader {
     {
         System.out.println("You have quit the program.");
         System.exit(0);
+        firstInput = false;
     }
 
     public void addProduct()
     {
         inputManager.addNewProduct(getInput());
+        System.out.println("You have added item: " + inputManager.productList.get(inputManager.productList.size() - 1).name + " to the product list.");
         firstInput = false;
     }
 
