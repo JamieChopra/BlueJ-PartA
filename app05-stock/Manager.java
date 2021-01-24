@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class Manager
@@ -34,8 +35,20 @@ public class Manager
             }
             else
                 {
-                    System.out.println(removeID + "has been removed " + count + " times");
+                    System.out.println(removeID + " has been removed " + count + " times");
                 }
+        return productList;
+    }
+
+    public ArrayList<Products> searchProduct(String searchName)
+    {
+        for(int i = 0; i < productList.size(); i++)
+        {
+            if(productList.get(i).name.contains(searchName))
+            {
+                System.out.println(productList.get(i).name + " " + productList.get(i).id);
+            }
+        }
         return productList;
     }
 

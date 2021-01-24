@@ -68,6 +68,12 @@ public class InputReader {
             firstInput = true;
             printAllProducts();
         }
+        else if(takingInput.equals("Search"))
+        {
+            firstInput = true;
+            searchProduct();
+        }
+
         else
             {
                 firstInput = false;
@@ -120,7 +126,14 @@ public class InputReader {
 
     public void removeProduct()
     {
-        inputManager.removeProduct(getInput());
+        int brandNewID = Integer.parseInt(getInput());
+        inputManager.removeProduct(brandNewID);
+        firstInput = false;
+    }
+
+    public void searchProduct()
+    {
+        inputManager.searchProduct(getInput());
         firstInput = false;
     }
 
