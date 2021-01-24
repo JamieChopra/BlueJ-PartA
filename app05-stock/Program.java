@@ -8,7 +8,6 @@
 public class Program
 {
     private static StockApp app;
-
     /**
      * This class creates and runs an instance of
      * the StockApp class
@@ -16,6 +15,7 @@ public class Program
     public static void main(String[]args)
     {
         app = new StockApp();
+        app.input.inputManager.defaultList();
         app.run();
     }
 }

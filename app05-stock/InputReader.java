@@ -55,10 +55,16 @@ public class InputReader {
 
             firstInput = true;
             addProduct();
+
         }
         else if(takingInput.equals("Remove"))
         {
 
+            firstInput = true;
+            removeProduct();
+        }
+        else if(takingInput.equals("PrintAll"))
+        {
             firstInput = true;
             printAllProducts();
         }
@@ -84,8 +90,31 @@ public class InputReader {
 
     public void addProduct()
     {
-        inputManager.addNewProduct(getInput());
-        System.out.println("You have added item: " + inputManager.productList.get(inputManager.productList.size() - 1).name + " to the product list.");
+        String listName = getInput();
+        String listID = getInput();
+        int idInt = Integer.parseInt(listID);
+        boolean b = true;
+
+        for(int i = 0; i < inputManager.productList.size(); i++)
+        {
+            if(inputManager.productList.get(i).id == idInt)
+            {
+                System.out.println("Invalid ID, please re-enter your product with a different id.");
+                addProduct();
+                b = false;
+            }
+        }
+        if(b && !listName.equals(""))
+        {
+            inputManager.addNewProduct(listName, idInt);
+            System.out.println("You have added item: " + inputManager.productList.get(inputManager.productList.size() - 1).name + " to the product list.");
+        }
+        else if(listName.equals(""))
+        {
+            System.out.println("Invalid name, cannot leave blank");
+            addProduct();
+        }
+
         firstInput = false;
     }
 

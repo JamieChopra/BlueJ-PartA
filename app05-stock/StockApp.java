@@ -10,7 +10,7 @@
 public class StockApp
 {
     // Use to get user input
-    private InputReader input;
+    public InputReader input;
     
     /**
      * Constructor for objects of class StockApp
@@ -26,7 +26,10 @@ public class StockApp
     public void run()
     {
         printHeading();
-        getMenuChoice();
+        while(true)
+        {
+            getMenuChoice();
+        }
     }
     
     /**
@@ -38,7 +41,6 @@ public class StockApp
         
         while(!finished)
         {
-            printHeading();
             printMenuChoices();
            
             String choice = input.getInput();
@@ -67,7 +69,7 @@ public class StockApp
     {
         System.out.println("******************************");
         System.out.println(" Stock Management Application ");
-        System.out.println("    App05: by Student Name");
+        System.out.println("    App05: by Jamie Chopra");
         System.out.println("******************************");
     }
 }
