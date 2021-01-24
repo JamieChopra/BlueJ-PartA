@@ -60,6 +60,11 @@ public class Manager
         }
     }
 
+    public ArrayList<Products> deliverStock()
+    {
+        
+    }
+
     public ArrayList<Products> defaultList()
     {
         productList.add(new Products());
