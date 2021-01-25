@@ -74,6 +74,30 @@ public class InputReader {
             searchProduct();
         }
 
+        else if(takingInput.equals("Deliver"))
+        {
+            firstInput = true;
+            deliverProduct();
+        }
+
+        else if(takingInput.equals("Sell"))
+        {
+            firstInput = true;
+            sellProduct();
+        }
+
+        else if(takingInput.equals("Low"))
+        {
+            firstInput = true;
+            lowStockProduct();
+        }
+
+        else if(takingInput.equals("ReStock"))
+        {
+            firstInput = true;
+            reStockProduct();
+        }
+
         else
             {
                 firstInput = false;
@@ -134,6 +158,34 @@ public class InputReader {
     public void searchProduct()
     {
         inputManager.searchProduct(getInput());
+        firstInput = false;
+    }
+
+    public void deliverProduct()
+    {
+        int deliverID = Integer.parseInt(getInput());
+        int stockNumber = Integer.parseInt(getInput());
+        inputManager.deliverStock(deliverID, stockNumber);
+        firstInput = false;
+    }
+
+    public void sellProduct()
+    {
+        int sellID = Integer.parseInt(getInput());
+        int sellNumber = Integer.parseInt(getInput());
+        inputManager.sellStock(sellID, sellNumber);
+        firstInput = false;
+    }
+
+    public void lowStockProduct()
+    {
+        inputManager.lowStock();
+        firstInput = false;
+    }
+
+    public void reStockProduct()
+    {
+        inputManager.reStock();
         firstInput = false;
     }
 

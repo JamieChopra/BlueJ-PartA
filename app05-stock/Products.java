@@ -25,7 +25,18 @@ public class Products
 
     public int sellStock(int myStock)
     {
-        stock -= myStock;
+        if(stock - myStock < 0)
+        {
+            int overflowStock = myStock - stock;
+            stock = 0;
+            System.out.println("You have sold all of your stock, you do not have sufficient stock to sell: " + overflowStock + " more stock");
+        }
+        else
+        {
+            stock -= myStock;
+            System.out.println("You have sold this amount of stock: " + myStock);
+            System.out.println("You have: " + stock + " stock left.");
+        }
         return stock;
     }
 

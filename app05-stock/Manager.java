@@ -56,13 +56,57 @@ public class Manager
     {
         for(int i = 0; i < productList.size(); i++)
         {
-            System.out.println(productList.get(i).name + ", " + productList.get(i).id);
+            System.out.println(productList.get(i).name + ", " + productList.get(i).id + ", " + productList.get(i).stock);
         }
     }
 
-    public ArrayList<Products> deliverStock()
+    public ArrayList<Products> deliverStock(int deliverID, int deliverAmount)
     {
-        
+        for(int i = 0; i < productList.size(); i++)
+        {
+            if(productList.get(i).id == deliverID)
+            {
+                productList.get(i).deliverStock(deliverAmount);
+                System.out.println("You have delivered this amount: " + deliverAmount + " of " + productList.get(i).name);
+            }
+        }
+        return productList;
+    }
+
+    public ArrayList<Products> sellStock(int sellID, int sellAmount)
+    {
+        for(int i = 0; i < productList.size(); i++)
+        {
+            if(productList.get(i).id == sellID)
+            {
+                productList.get(i).sellStock(sellAmount);
+            }
+        }
+        return productList;
+    }
+
+    public ArrayList<Products> lowStock()
+    {
+        for(int i = 0; i < productList.size(); i++)
+        {
+            if(productList.get(i).stock < 4)
+            {
+                System.out.println(productList.get(i).name + ", " + productList.get(i).id + ", " + productList.get(i).stock);
+            }
+        }
+        return productList;
+    }
+
+    public ArrayList<Products> reStock()
+    {
+        for(int i = 0; i < productList.size(); i++)
+        {
+            if(productList.get(i).stock < 4)
+            {
+                productList.get(i).stock = 10;
+            }
+        }
+        return productList;
     }
 
     public ArrayList<Products> defaultList()
