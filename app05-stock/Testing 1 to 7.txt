@@ -1,0 +1,130 @@
+Program.main({ });
+******************************
+ Stock Management Application 
+    App05: by Jamie Chopra
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Add
+> Samsung Galaxy S10
+> 111
+You have added item: Samsung Galaxy S10 to the product list.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Add
+> Samsung Galaxy S20
+> 112
+You have added item: Samsung Galaxy S20 to the product list.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Add
+> Apple iPhone 11
+> 113
+You have added item: Apple iPhone 11 to the product list.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Add
+> Apple iPhone 12
+> 114
+You have added item: Apple iPhone 12 to the product list.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Add
+> Motorola G9 Plus
+> 115
+You have added item: Motorola G9 Plus to the product list.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Add
+> New Product
+> 103
+Invalid ID, please re-enter your product with a different id.
+> New Product
+> 120
+You have added item: New Product to the product list.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Add
+> 
+> 116
+Invalid name, cannot leave blank
+> worked
+> 116
+You have added item: worked to the product list.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Quit
+You have quit the program.
+    VM terminated.

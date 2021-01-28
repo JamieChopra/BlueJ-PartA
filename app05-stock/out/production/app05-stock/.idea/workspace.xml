@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ec919edd-ad40-4cd1-8b77-485003692ee4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/app05-stock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/app05-stock/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/production/app05-stock/.idea" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../App06-Zuul2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />

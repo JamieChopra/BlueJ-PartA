@@ -8,7 +8,7 @@ public class Manager
     ArrayList<Products> productList= new ArrayList<Products>();
 
     /**
-     * 
+     *Adds products to end of arraylist (requires user input of name and id)
      */
     public ArrayList<Products> addNewProduct(String newName, int thisID)
     {
@@ -18,6 +18,9 @@ public class Manager
         return productList;
     }
 
+    /**
+     *Goes through list and searches for product and removes it based on id.
+     */
     public ArrayList<Products> removeProduct(int removeID)
     {
         int count = 0;
@@ -43,6 +46,10 @@ public class Manager
         return productList;
     }
 
+    /**
+     * Gets user input and stores it as a string then searches the list to see what items contain
+     * the string and prints them.
+     */
     public ArrayList<Products> searchProduct(String searchName)
     {
         for(int i = 0; i < productList.size(); i++)
@@ -55,6 +62,9 @@ public class Manager
         return productList;
     }
 
+    /**
+     * Goes through the list and prints products name, id and stock.
+     */
     public void printList()
     {
         for(int i = 0; i < productList.size(); i++)
@@ -63,19 +73,30 @@ public class Manager
         }
     }
 
+    /**
+     *  User can input an amount they wish to deliver and the id.
+     */
     public ArrayList<Products> deliverStock(int deliverID, int deliverAmount)
     {
         for(int i = 0; i < productList.size(); i++)
         {
-            if(productList.get(i).id == deliverID)
-            {
-                productList.get(i).deliverStock(deliverAmount);
-                System.out.println("You have delivered this amount: " + deliverAmount + " of " + productList.get(i).name);
+            if(deliverAmount > 0) {
+                if (productList.get(i).id == deliverID) {
+                    productList.get(i).deliverStock(deliverAmount);
+                    System.out.println("You have delivered this amount: " + deliverAmount + " of " + productList.get(i).name);
+                }
             }
+            else
+                {
+                    System.out.println("You have not entered a valid value.");
+                }
         }
         return productList;
     }
 
+    /**
+     *  User can input an amount of stock they wish to sell for a certain id.
+     */
     public ArrayList<Products> sellStock(int sellID, int sellAmount)
     {
         for(int i = 0; i < productList.size(); i++)
@@ -88,6 +109,9 @@ public class Manager
         return productList;
     }
 
+    /**
+     *  Prints all products with a stock number of less than 4.
+     */
     public ArrayList<Products> lowStock()
     {
         for(int i = 0; i < productList.size(); i++)
@@ -100,6 +124,9 @@ public class Manager
         return productList;
     }
 
+    /**
+     *  Restocks all products in a list to 10.
+     */
     public ArrayList<Products> reStock()
     {
         for(int i = 0; i < productList.size(); i++)
@@ -112,6 +139,9 @@ public class Manager
         return productList;
     }
 
+    /**
+     *  Method for creating the default product list.
+     */
     public ArrayList<Products> defaultList()
     {
         productList.add(new Products());
