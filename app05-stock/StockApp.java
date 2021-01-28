@@ -4,7 +4,7 @@
  * stock manager so that users can add, edit,
  * print and remove stock products
  *
- * @author Student Name
+ * @author Jamie Chopra
  * @version 0.1
  */
 public class StockApp
@@ -33,7 +33,7 @@ public class StockApp
     }
     
     /**
-     * 
+     * Method that prints all menu choices and gets user input to make choice.
      */
     public void getMenuChoice()
     {

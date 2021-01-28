@@ -7,6 +7,9 @@ public class Manager
 
     ArrayList<Products> productList= new ArrayList<Products>();
 
+    /**
+     * 
+     */
     public ArrayList<Products> addNewProduct(String newName, int thisID)
     {
         productList.add(new Products());

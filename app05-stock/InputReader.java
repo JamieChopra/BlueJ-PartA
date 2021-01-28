@@ -8,6 +8,7 @@ import java.util.Scanner;
  * 
  * @author     Michael Kölling and David J. Barnes
  * @version    0.1 (2016.02.29)
+ * Edited by Jamie Chopra
  */
 public class InputReader {
     private Scanner reader;
@@ -118,6 +119,9 @@ public class InputReader {
         firstInput = false;
     }
 
+    /**
+     * Add method that recieves user input and adds products name and id to the list.
+     */
     public void addProduct()
     {
         String listName = getInput();
@@ -148,6 +152,9 @@ public class InputReader {
         firstInput = false;
     }
 
+    /**
+     * Method for removing product from item list based on id.
+     */
     public void removeProduct()
     {
         int brandNewID = Integer.parseInt(getInput());
@@ -155,12 +162,18 @@ public class InputReader {
         firstInput = false;
     }
 
+    /**
+     * Method for searching for product on item list based on part of its name.
+     */
     public void searchProduct()
     {
         inputManager.searchProduct(getInput());
         firstInput = false;
     }
 
+    /**
+     * Method for delivering an amount of product to an id.
+     */
     public void deliverProduct()
     {
         int deliverID = Integer.parseInt(getInput());
@@ -169,6 +182,9 @@ public class InputReader {
         firstInput = false;
     }
 
+    /**
+     * Method for selling an amount of product from an id.
+     */
     public void sellProduct()
     {
         int sellID = Integer.parseInt(getInput());
@@ -177,18 +193,27 @@ public class InputReader {
         firstInput = false;
     }
 
+    /**
+     * Method for printing a list of products with 3 or less stock.
+     */
     public void lowStockProduct()
     {
         inputManager.lowStock();
         firstInput = false;
     }
 
+    /**
+     * Method for restocking products to 10.
+     */
     public void reStockProduct()
     {
         inputManager.reStock();
         firstInput = false;
     }
 
+    /**
+     * Method for printing all products.
+     */
     public void printAllProducts()
     {
         inputManager.printList();

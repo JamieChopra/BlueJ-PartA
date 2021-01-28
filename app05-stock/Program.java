@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Program here.
+ * Contains main method to run application.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Jamie Chopra
+ * @version 0.1
  */
 public class Program
 {
