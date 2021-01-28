@@ -99,13 +99,17 @@ public class Manager
      */
     public ArrayList<Products> sellStock(int sellID, int sellAmount)
     {
-        for(int i = 0; i < productList.size(); i++)
-        {
-            if(productList.get(i).id == sellID)
-            {
-                productList.get(i).sellStock(sellAmount);
+        if(sellAmount > 0) {
+            for (int i = 0; i < productList.size(); i++) {
+                if (productList.get(i).id == sellID) {
+                    productList.get(i).sellStock(sellAmount);
+                }
             }
         }
+        else
+            {
+                System.out.println("You have not entered a valid value.");
+            }
         return productList;
     }
 
