@@ -1,95 +1,3 @@
-Program.main({ });
-******************************
- Stock Management Application 
-    App05: by Jamie Chopra
-******************************
-
-    Add:        Add a new product
-    Remove:     Remove an old product
-    PrintAll:   Print all products
-    Search:     Print products based on a part of their name
-    Deliver:    Chose an ID then deliver stock to it
-    Sell:       Chose an ID then sell an amount of stock from it
-    Low:        Print a list of products with low stock
-    ReStock:   Restock all products
-    Quit:       Quit the program
-
-> Add
-> Samsung Galaxy S10
-> 111
-You have added item: Samsung Galaxy S10 to the product list.
-
-    Add:        Add a new product
-    Remove:     Remove an old product
-    PrintAll:   Print all products
-    Search:     Print products based on a part of their name
-    Deliver:    Chose an ID then deliver stock to it
-    Sell:       Chose an ID then sell an amount of stock from it
-    Low:        Print a list of products with low stock
-    ReStock:   Restock all products
-    Quit:       Quit the program
-
-> Add
-> Samsung Galaxy S20
-> 112
-You have added item: Samsung Galaxy S20 to the product list.
-
-    Add:        Add a new product
-    Remove:     Remove an old product
-    PrintAll:   Print all products
-    Search:     Print products based on a part of their name
-    Deliver:    Chose an ID then deliver stock to it
-    Sell:       Chose an ID then sell an amount of stock from it
-    Low:        Print a list of products with low stock
-    ReStock:   Restock all products
-    Quit:       Quit the program
-
-> Add
-> Apple iPhone 11
-> 113
-You have added item: Apple iPhone 11 to the product list.
-
-    Add:        Add a new product
-    Remove:     Remove an old product
-    PrintAll:   Print all products
-    Search:     Print products based on a part of their name
-    Deliver:    Chose an ID then deliver stock to it
-    Sell:       Chose an ID then sell an amount of stock from it
-    Low:        Print a list of products with low stock
-    ReStock:   Restock all products
-    Quit:       Quit the program
-
-> Add
-> Apple iPhone 12
-> 114
-You have added item: Apple iPhone 12 to the product list.
-
-    Add:        Add a new product
-    Remove:     Remove an old product
-    PrintAll:   Print all products
-    Search:     Print products based on a part of their name
-    Deliver:    Chose an ID then deliver stock to it
-    Sell:       Chose an ID then sell an amount of stock from it
-    Low:        Print a list of products with low stock
-    ReStock:   Restock all products
-    Quit:       Quit the program
-
-> Add
-> Motorola G9 Plus
-> 115
-You have added item: Motorola G9 Plus to the product list.
-
-    Add:        Add a new product
-    Remove:     Remove an old product
-    PrintAll:   Print all products
-    Search:     Print products based on a part of their name
-    Deliver:    Chose an ID then deliver stock to it
-    Sell:       Chose an ID then sell an amount of stock from it
-    Low:        Print a list of products with low stock
-    ReStock:   Restock all products
-    Quit:       Quit the program
-
-> Add
 > New Product
 > 103
 Invalid ID, please re-enter your product with a different id.
@@ -111,9 +19,171 @@ You have added item: New Product to the product list.
 > 
 > 116
 Invalid name, cannot leave blank
-> worked
+> Worked
 > 116
-You have added item: worked to the product list.
+You have added item: Worked to the product list.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Remove
+> 113
+113 has been removed 1 times
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Remove
+> 203
+The item you are attempting to remove does not exist on the list.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> PrintAll
+Bread, 100, 0
+Apple, 101, 0
+Orange, 102, 0
+Beetroot, 103, 0
+Pear, 104, 0
+Raspberry, 105, 0
+Samsung Galaxy S10, 111, 0
+Samsung Galaxy S20, 112, 0
+Apple iPhone 12, 114, 0
+Motorola G9 Plus, 115, 0
+New Product, 120, 0
+Worked, 116, 0
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Deliver
+> 112
+> 8
+You have delivered this amount: 8 of Samsung Galaxy S20
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Deliver
+> 112
+> -4
+You have not entered a valid value.
+You have not entered a valid value.
+You have not entered a valid value.
+You have not entered a valid value.
+You have not entered a valid value.
+You have not entered a valid value.
+You have not entered a valid value.
+You have not entered a valid value.
+You have not entered a valid value.
+You have not entered a valid value.
+You have not entered a valid value.
+You have not entered a valid value.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Sell
+> 112
+> 2
+You have sold this amount of stock: 2
+You have: 6 stock left.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Sell
+> 112
+> -2
+You have not entered a valid value.
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Search
+> Samsung
+Samsung Galaxy S10 111
+Samsung Galaxy S20 112
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Search:     Print products based on a part of their name
+    Deliver:    Chose an ID then deliver stock to it
+    Sell:       Chose an ID then sell an amount of stock from it
+    Low:        Print a list of products with low stock
+    ReStock:   Restock all products
+    Quit:       Quit the program
+
+> Low
+Bread, 100, 0
+Apple, 101, 0
+Orange, 102, 0
+Beetroot, 103, 0
+Pear, 104, 0
+Raspberry, 105, 0
+Samsung Galaxy S10, 111, 0
+Apple iPhone 12, 114, 0
+Motorola G9 Plus, 115, 0
+New Product, 120, 0
+Worked, 116, 0
 
     Add:        Add a new product
     Remove:     Remove an old product

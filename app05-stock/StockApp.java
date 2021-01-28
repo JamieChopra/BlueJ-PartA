@@ -62,7 +62,7 @@ public class StockApp
         System.out.println("    Deliver:    Chose an ID then deliver stock to it");
         System.out.println("    Sell:       Chose an ID then sell an amount of stock from it");
         System.out.println("    Low:        Print a list of products with low stock");
-        System.out.println("    ReStock:   Restock all products");
+        System.out.println("    ReStock:    Restock all products");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }
